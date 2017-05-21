@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Restaurants</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+    	<ion-refresher-content>
+    	</ion-refresher-content>
+  	</ion-refresher>
+	<ion-list>
+		<ion-grid>
+			<ion-row *ngFor="let restaurant of restaurants" (click)="itemTapped(restaurant)">
+				<ion-col col-3><img width="80" height="80" [src]="restaurant.photo"></ion-col>
+				<ion-col col-9>{{ restaurant.title }}</ion-col>
+			</ion-row>
+		</ion-grid>
+	</ion-list>    	
+	<ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+		<ion-infinite-scroll-content
+		loadingSpinner="bubbles"
+      	loadingText="Loading more data...">
+      		
+      	</ion-infinite-scroll-content>
+	</ion-infinite-scroll>		
+</ion-content>
+

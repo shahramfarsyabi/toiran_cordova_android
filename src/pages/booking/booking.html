@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Booking</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<div style="background-image: url('assets/bg.jpg');background-size: cover; height: 30vh; text-align: center; position: relative">
+		<button ion-button color="light" round style="position: absolute; top:50%; margin-top: -20px;left: 50%; margin-left: -70px">Light Round</button>
+	</div>
+
+	<div style="background: #FFF; height: 220px; text-align: center">
+		<ion-grid>
+			<ion-row>
+				<ion-col no-padding>
+				  <h2>Checkin</h2>
+				</ion-col>
+				<ion-col no-padding>
+				  <h2>Checkout</h2>				  
+				</ion-col>
+			</ion-row>
+			<ion-row>
+
+				<ion-col no-padding >
+					<ion-item style="text-align: center !important">
+					  <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+					</ion-item>						  
+				</ion-col>
+				<ion-col no-padding col-1 text-center>
+				  To
+				</ion-col>
+				<ion-col no-padding >
+					<ion-item>
+					  <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.month"></ion-datetime>
+					</ion-item>				  
+				</ion-col>
+
+			</ion-row>
+			
+			<hr style="width: 95%" />
+
+			<ion-row>
+				<ion-col no-padding>
+				  1 of 2
+				</ion-col>
+				<ion-col no-padding>
+				  2 of 2
+				</ion-col>
+			</ion-row>	
+			<ion-row>
+				<ion-col no-padding>
+				  <h2>Rooms</h2>
+				</ion-col>
+				<ion-col no-padding>
+				  <h2>Guests</h2>				  
+				</ion-col>
+			</ion-row>									
+		</ion-grid>
+	</div>
+
+
+	<div style="text-align: center; position: relative;border-top: 1px solid #000;background-image: url('assets/bg.jpg');">
+		<a style="width: 100px;height: 100px;background: blue;position: absolute; left: 50%; margin-left: -50px; top: -50px; border-radius: 50%;border: 3px solid #FFF; "></a>
+		<a style="width: 50px;height: 50px;background: blue;position: absolute; left: 75%; margin-left: 25px;margin-right: 100px; top: -25px; border-radius: 50% "></a>
+	</div>
+
+</ion-content>

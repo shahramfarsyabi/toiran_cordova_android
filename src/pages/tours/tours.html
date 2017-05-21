@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tours</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<ion-slides pager effect="slide" parallax="true" paginationType="progress" >
+
+	  <ion-slide *ngFor="let tour of tours">
+			<div class="tour-header" [style.backgroundImage]="'url(' + tour.photo + ')'">
+				<a class="tour-title">{{ tour.title }}</a>
+
+				<div class="arrows">
+					<ion-icon class="arrow-prev" name="ios-arrow-back" (click)="goToPrevSlide()"></ion-icon>
+					<ion-icon class="arrow-next" name="ios-arrow-forward" (click)="goToNextSlide()"></ion-icon>
+				</div>
+
+				<div style="position: absolute; left: 0px; bottom: 0px">
+					<ion-icon class="fav-heart-icon" name="ios-heart"></ion-icon>
+				</div>
+			</div>
+			<div padding class="tour-description" [innerHTML]="tour.description"></div>
+	  </ion-slide>
+
+	</ion-slides>
+</ion-content>

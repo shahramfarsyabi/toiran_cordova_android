@@ -1,0 +1,88 @@
+<ion-content #nav padding style="background-image: url('assets/bg.jpg')">
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>    
+      <ion-col col-4 text-center (click)="openPage('BookingPage')">
+        <img src="assets/circle.png" />
+        Booking
+      </ion-col>
+      <ion-col col-4 text-center (click)="openPage('ToursPage')">
+        <img src="assets/circle.png" />
+        Tours
+      </ion-col>
+      <ion-col></ion-col>      
+    </ion-row>   
+
+    <ion-row>
+      <ion-col></ion-col>    
+      <ion-col col-4 text-center (click)="openPage('CityPage')">
+        <img src="assets/circle.png" />
+        Sights to see
+      </ion-col>
+      <ion-col col-4 text-center (click)="openPage('HotelsPage')">
+        <img src="assets/circle.png" />
+        Cities
+      </ion-col>
+      <ion-col></ion-col>      
+    </ion-row>   
+
+    <ion-row>
+      <ion-col></ion-col>    
+      <ion-col col-4 text-center>
+        <img src="assets/circle.png" />
+        Tailor your trip
+      </ion-col>
+      <ion-col col-4 text-center (click)="openPage('RestaurantsPage')">
+        <img src="assets/circle.png" />
+        Restaurants
+      </ion-col>
+      <ion-col></ion-col>      
+    </ion-row>       
+  </ion-grid>
+</ion-content>
+
+<ion-header class="toiran">
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu' style="color: #FFF"></ion-icon>
+    </button>
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-menu [content]="nav">
+  <ion-header class="side-menu-header">
+    <ion-navbar style="text-align : center; background: #FFF; padding: 0px">
+    <div style="background: #FFF; height: 100px; text-align : center; padding: 3rem 1rem !important"><img src="http://www.toiran.com/img/logo/main-logo.png" /></div>
+    </ion-navbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage('EmbassiesPage')">
+        Embassies
+      </button> 
+      <button ion-item (click)="openPage('DictionaryPage')">
+        Dictionary
+      </button> 
+      <button ion-item (click)="openPage(signupPage)">
+        Why Iran
+      </button> 
+      <button ion-item (click)="openPage(signupPage)">
+        FAQ
+      </button>             
+      <button ion-item (click)="openPage(signupPage)">
+        Aboutus
+      </button>
+      <button ion-item (click)="openPage(signupPage)">
+        Contactus
+      </button>      
+      <button ion-item (click)="openPage('LoginPage')">
+        Login
+      </button>
+      <button ion-item (click)="openPage(signupPage)">
+        Signup
+      </button>                 
+    </ion-list>
+  </ion-content>
+</ion-menu>

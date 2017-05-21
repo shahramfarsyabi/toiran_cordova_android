@@ -1,0 +1,6 @@
+<ion-content padding>
+	<span ion-datepicker (ionChanged)="setDate($event);" [value]="localDate" [min]="localDate" full="false"  calendar="true" clear class="ScheduleDate">
+        <span>{{localDate | date}} <ion-icon name="clipboard" item-left ></ion-icon> </span>
+    </span>
+    <div id="MyCalendar" class="MyCalendar" style="height: 200px; width: 100%"></div>
+</ion-content>

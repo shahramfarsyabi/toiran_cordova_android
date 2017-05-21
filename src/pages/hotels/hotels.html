@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar style="height: 100px">
+    <ion-title>Hotels</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-grid>
+			<ion-row *ngFor="let hotel of hotels" (click)="itemTapped(hotel)">
+				<ion-col col-3><img width="80" height="80" [src]="hotel.photo"></ion-col>
+				<ion-col col-9>{{ hotel.title }}</ion-col>
+			</ion-row>
+		</ion-grid>
+	</ion-list>
+</ion-content>
+

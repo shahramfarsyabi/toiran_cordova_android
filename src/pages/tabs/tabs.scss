@@ -1,0 +1,14 @@
+page-tab-main {
+	.tabs-md .tab-button-icon {
+		font-size: 3.3rem
+	}
+
+	.toiran .toolbar-background {
+		background : none;
+		border: none;
+	}
+
+	.header-md::after {
+		background-image : none !important
+	}
+}
