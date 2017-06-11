@@ -16,6 +16,7 @@ import { MapPage } from '../pages/map/map';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
 import { HotelsPage } from '../pages/hotels/hotels';
 import { CityPage } from '../pages/city/city';
 import { BookingPage } from '../pages/booking/booking';
@@ -34,6 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MapPage,
     HomePage,
     LoginPage,
+    SignupPage,
     HotelsPage,
     CityPage,
     BookingPage,
@@ -56,6 +58,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MapPage,
     HomePage,
     LoginPage,
+    SignupPage,
     HotelsPage,
     CityPage,
     TabsPage,

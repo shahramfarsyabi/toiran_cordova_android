@@ -6,6 +6,7 @@ import { CityPage } from '../city/city';
 import { BookingPage } from '../booking/booking';
 import { ToursPage } from '../tours/tours';
 import { LoginPage } from  '../login/login';
+import { SignupPage } from  '../signup/signup';
 import { RestaurantsPage } from  '../restaurants/restaurants';
 import { DictionaryPage } from '../dictionary/dictionary';
 import { EmbassiesPage } from '../embassies/embassies';
@@ -33,6 +34,10 @@ export class HomePage {
 
       case "LoginPage":
         this.navCtrl.push(LoginPage);
+        break;
+
+      case "SignupPage":
+        this.navCtrl.push(SignupPage);
         break;
 
       case "RestaurantsPage":
