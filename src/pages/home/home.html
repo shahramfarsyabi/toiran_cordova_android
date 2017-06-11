@@ -1,44 +1,97 @@
-<ion-content #nav padding style="background-image: url('assets/bg.jpg')">
-  <ion-grid>
-    <ion-row>
-      <ion-col></ion-col>    
-      <ion-col col-4 text-center (click)="openPage('BookingPage')">
-        <img src="assets/circle.png" />
-        Booking
-      </ion-col>
-      <ion-col col-4 text-center (click)="openPage('ToursPage')">
-        <img src="assets/circle.png" />
-        Tours
-      </ion-col>
-      <ion-col></ion-col>      
-    </ion-row>   
-
-    <ion-row>
-      <ion-col></ion-col>    
-      <ion-col col-4 text-center (click)="openPage('CityPage')">
-        <img src="assets/circle.png" />
-        Sights to see
-      </ion-col>
-      <ion-col col-4 text-center (click)="openPage('HotelsPage')">
-        <img src="assets/circle.png" />
-        Cities
-      </ion-col>
-      <ion-col></ion-col>      
-    </ion-row>   
-
-    <ion-row>
-      <ion-col></ion-col>    
-      <ion-col col-4 text-center>
-        <img src="assets/circle.png" />
-        Tailor your trip
-      </ion-col>
-      <ion-col col-4 text-center (click)="openPage('RestaurantsPage')">
-        <img src="assets/circle.png" />
-        Restaurants
-      </ion-col>
-      <ion-col></ion-col>      
-    </ion-row>       
-  </ion-grid>
+<ion-content #nav>
+	<div class="shortcuts-wrapper" padding>
+		<ion-grid class="shortcuts">
+			<ion-row center>
+				<ion-col padding><img margin-right src="assets/circle.png" width="32" height="32">Cities</ion-col>
+				<ion-col padding (click)="openPage('HotelsPage')"><img margin-right src="assets/circle.png" width="32" height="32">Hotels</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col padding (click)="openPage('RestaurantsPage')"><img margin-right src="assets/circle.png" width="32" height="32">Restaurants</ion-col>
+				<ion-col padding><img margin-right src="assets/circle.png" width="32" height="32">Sights to See</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col padding><img margin-right src="assets/circle.png" width="32" height="32">Favorites</ion-col>
+				<ion-col padding (click)="openPage('BookingPage')"><img margin-right src="assets/circle.png" width="32" height="32">Booking</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+	<div class="fav-cities" margin-bottom>
+		<p padding-horizontal text-center class="intro">Cities you must explore</p>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Tehran</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Isfahan</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Shiraz</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Tabriz</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Mashhad</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Bandar-e Anzali</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Rasht</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Yazd</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Ahvaz</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+				<ion-col col-6>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Kashan</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
 </ion-content>
 
 <ion-header class="toiran">
