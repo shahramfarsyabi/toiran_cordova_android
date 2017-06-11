@@ -7,22 +7,31 @@
 		</ion-buttons>
 	</ion-toolbar>
 </ion-header>
-<ion-content class="login">
+<ion-content class="signup">
 	<div class="logo" text-center align-items-center>
-		dddddddddddddd<img src="assets/main-logo.png" width="167" height="31" >
+		<img src="assets/main-logo.png" width="167" height="31" >
 	</div>
 	<div class="page-content">
 		<ion-item>
-			<ion-input type="text" placeholder="Username"></ion-input>
+			<ion-input type="text" placeholder="First Name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="text" placeholder="Last Name"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input type="text" placeholder="Email"></ion-input>
 		</ion-item>
 		<ion-item>
 			<ion-input type="password" placeholder="Password"></ion-input>
 		</ion-item>
+		<ion-item>
+			<ion-input type="password" placeholder="Confirm Password"></ion-input>
+		</ion-item>
 		<div class="buttons">
-			<button class="signin" ion-button block>Sign in</button>
+			<button class="signin" ion-button block>Sign up</button>
 			<button class="signin fb" ion-button block>Sign in with Facebook</button>
-			<p>Don't have an account yet?</p>
-			<button class="signup" ion-button block>Sign up</button>
+			<p>Already have an account?</p>
+			<button class="signup" ion-button block>Sign in</button>
 		</div>
 	</div>
 </ion-content>
