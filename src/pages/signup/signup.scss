@@ -33,18 +33,18 @@ page-signup{
 				background-color: rgba(0, 0, 0, .8);
 			}
 			div{
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
+				// display: flex;
+				// flex-direction: column;
+				// justify-content: space-between;
 				&.logo{
-					flex-basis: auto;
+					// flex-basis: auto;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					padding: 3em 0;
 				}
 				&.page-content{
-					flex-basis: auto;
+					// flex-basis: auto;
 					padding: 0 5% 15px;
 					ion-item,
 					.item-inner{
