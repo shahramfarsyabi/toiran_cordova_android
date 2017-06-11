@@ -2,7 +2,7 @@
 	<div class="shortcuts-wrapper" padding>
 		<ion-grid class="shortcuts">
 			<ion-row center>
-				<ion-col padding><img margin-right src="assets/circle.png" width="32" height="32">Cities</ion-col>
+				<ion-col padding (click)="openPage('CitiesPage')"><img margin-right src="assets/circle.png" width="32" height="32">Cities</ion-col>
 				<ion-col padding (click)="openPage('HotelsPage')"><img margin-right src="assets/circle.png" width="32" height="32">Hotels</ion-col>
 			</ion-row>
 			<ion-row>

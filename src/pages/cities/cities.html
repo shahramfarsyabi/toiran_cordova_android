@@ -1,0 +1,76 @@
+<ion-header no-border>
+	<ion-toolbar>
+		<ion-buttons start>
+			<button ion-button icon-only (click)="goBack()">
+				<ion-icon name="arrow-back"></ion-icon>
+			</button>
+		</ion-buttons>
+		<ion-title>Cities</ion-title>
+		<ion-buttons end>
+			<button ion-button icon-only>
+				<ion-icon name="options"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-toolbar>
+	<ion-searchbar
+	[(ngModel)]="myInput"
+	[showCancelButton]="shouldShowCancel"
+	(ionInput)="onInput($event)"
+	(ionCancel)="onCancel($event)">
+	</ion-searchbar>
+</ion-header>
+
+<ion-content>
+	<div class="cities-list" margin-bottom>
+		<ion-grid>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Tehran</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Bandar-e Anzali</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Tehran</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Bandar-e Anzali</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Tehran</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-12>
+					<div class="fav-city-wrapper" style="background-image: url(assets/bg2.jpg);">
+						<h3 no-margin text-nowrap>Bandar-e Anzali</h3>
+						<span>Some Text Here</span>
+					</div>
+				</ion-col>
+			</ion-row>
+		</ion-grid>
+	</div>
+</ion-content>
